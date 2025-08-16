@@ -5,7 +5,8 @@
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "18"
-    }
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
 
   "customizations": {
@@ -17,7 +18,8 @@
         "ms-vscode.vscode-typescript-next",
         "bradlc.vscode-tailwindcss",
         "esbenp.prettier-vscode",
-        "amazonwebservices.amazon-q-vscode"
+        "amazonwebservices.amazon-q-vscode",
+        "ms-vscode-remote.remote-containers"
       ],
       "settings": {
         "calva.replConnectSequences": [

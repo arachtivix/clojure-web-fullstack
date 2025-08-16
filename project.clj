@@ -13,7 +13,9 @@
                                    :optimizations :advanced
                                    :main web-app.main}}]}
   :profiles {:dev {:dependencies [[ring/ring-devel "1.9.6"]]}
-             :uberjar {:cljsbuild {:builds [{:id "prod"
+             :uberjar {:aot :all
+                       :cljsbuild {:builds [{:id "prod"
                                              :source-paths ["src-cljs"]
                                              :compiler {:output-to "resources/public/js/main.js"
-                                                        :optimizations :advanced}}]}}})
+                                                        :optimizations :advanced}}]}}}
+  :prep-tasks ["compile" ["cljsbuild" "once" "prod"]])

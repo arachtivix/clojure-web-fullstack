@@ -110,6 +110,18 @@ lein run
 
 The application will be available at `http://localhost:3000`
 
+### Docker
+
+#### Build and Run with Docker
+```bash
+# Build the Docker image
+./build.sh
+
+# Or manually:
+docker build -t clojure-web-fullstack .
+docker run -p 3000:3000 clojure-web-fullstack
+```
+
 ### Production Build
 
 For production, compile ClojureScript with advanced optimizations:
