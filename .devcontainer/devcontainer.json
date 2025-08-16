@@ -16,7 +16,8 @@
         "redhat.vscode-yaml",
         "ms-vscode.vscode-typescript-next",
         "bradlc.vscode-tailwindcss",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "amazonwebservices.amazon-q-vscode"
       ],
       "settings": {
         "calva.replConnectSequences": [
