@@ -2,10 +2,22 @@
 <html>
 <head>
     <title>Clojure Web App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #data-container { margin-top: 20px; padding: 20px; border: 1px solid #ccc; }
+    </style>
 </head>
 <body>
     <h1>Welcome to Clojure Web Development!</h1>
     <p>This is a simple web application built with Ring and Compojure.</p>
     <p><a href="/hello">Say Hello</a></p>
+    
+    <hr>
+    <h2>ClojureScript Frontend</h2>
+    <button id="load-data">Load Data from Backend</button>
+    <div id="data-container">Click the button to load data...</div>
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
