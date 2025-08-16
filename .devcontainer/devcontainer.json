@@ -1,17 +1,11 @@
 {
   "name": "Clojure Web Development",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "image": "mcr.microsoft.com/devcontainers/java:17-bullseye",
   
   "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "17",
-      "jdkDistro": "temurin"
-    },
     "ghcr.io/devcontainers/features/node:1": {
       "version": "18"
-    },
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    }
   },
 
   "customizations": {
